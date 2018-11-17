@@ -15,9 +15,8 @@
         "url": ""
     },
     "keywords": [
-        "music",
-        "disks",
-        "collection"
+        "posts",
+        "news"
     ],
     "author": "Daniel Mello Siqueira <https://danielsiqueira.net>",
     "contributors": [],
@@ -32,8 +31,6 @@
         "express": "~4.15.5",
         "forever": "^0.15.3",
         "helmet": "^3.6.0",
-        "jsonwebtoken": "^5.7.0",
-        "md5": "^2.2.1",
         "moment": "^2.22.1",
         "moment-timezone": "^0.5.23",
         "mysql": "^2.5.4",
