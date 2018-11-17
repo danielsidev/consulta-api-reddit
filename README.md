@@ -1,6 +1,6 @@
 # Consulta da API do Reddit
 
-> Consulta diária da api do reddit para cadastro no mysql e disponibilização de 3 endpointas para consulta na base sql.
+>Consulta diária da api do reddit para cadastro no mysql e disponibilização de 3 endpointas para consulta na base sql.
 
 ## Build Setup
 
@@ -18,9 +18,10 @@ sudo npm run dev
 # Funcionamento da aplicação:
 A recuperação de dados e inserção, roda em um cronjob, através no Node diariamente às 08:00 da manhã.
 
-> Em ./source/Consulta Reddit API.postman_collection.json existem uma collection do Postman para testar os endpoints abaixo. Basta importá-la.
+>Em ./source/Consulta Reddit API.postman_collection.json existem uma collection
+ do Postman para testar os endpoints abaixo. Basta importá-la.
 
-> HOST: http://localhost::30838 
+>HOST: http://localhost::30838 
 # OS endpoints da aplicação para consulta são:
 Consulta ordenando pelos comentários
 ENDPOINT: /api/v1/posts/type-order/comments
@@ -31,14 +32,14 @@ ENDPOINT: /api/v1/posts/type-order/ups
 Consulta por um range de timestamp e o tipo de ordenação decrescente(ups ou comments).
 Parâmetros enviados via header:
 Headers: { 
-            "x-access-dtStart":"2016-02-03 00:00:01",
-            "x-access-dtEnd":"2016-02-10 00:00:01",
+            "x-access-dtStart":"1970-01-18 00:00:01",
+            "x-access-dtEnd":"1970-01-18 17:25:59",
             "x-access-type-order":"ups"
         }
 ou
 Headers: { 
-            "x-access-dtStart":"2016-02-03 00:00:01",
-            "x-access-dtEnd":"2016-02-10 00:00:01",
+            "x-access-dtStart":"1970-01-18 00:00:01",
+            "x-access-dtEnd":"1970-01-18 17:25:59",
             "x-access-type-order":"comments"
         }
 ENDPOINT: /api/v1/posts/period/type-order
