@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "66399185-7652-4544-8ddc-39b484892b29",
+		"name": "Consulta Reddit API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Period and Type Order",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-dtStart",
+						"value": "2016-02-05 00:00:01",
+						"type": "text"
+					},
+					{
+						"key": "x-access-dtEnd",
+						"value": "2016-02-10 23:59:59",
+						"type": "text"
+					},
+					{
+						"key": "x-access-typeOrder",
+						"value": "ups",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:30838/api/v1/posts/period/type-order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30838",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"period",
+						"type-order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Type Order Comments Desc",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:30838/api/v1/posts/type-order/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30838",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"type-order",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Type Order Ups Desc",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:30838/api/v1/posts/type-order/ups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30838",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"type-order",
+						"ups"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
